@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Test your knowledge of animals!</h1>
+
+    <!-- Home Screen -->
+    <div id="home-screen">
+      <h2>Select Difficulty</h2>
+      <div>
+        <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+        <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+        <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+      </div>
+      <div id="leaderboard">
+        <h2>🏆Leaderboard🏆</h2>
+
+        <div id="leaderboard-sections">
+            <div class="leaderboard-section">
+            <h3>Easy</h3>
+            <ul id="leaderboard-easy"></ul>
+        </div>
+
+        <div class="leaderboard-section">
+            <h3>Medium</h3>
+            <ul id="leaderboard-medium"></ul>
+        </div>
+
+        <div class="leaderboard-section">
+            <h3>Hard</h3>
+            <ul id="leaderboard-hard"></ul>
+        </div>
+     </div>
+</div>
+
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="hidden">
+      <div id="question-container"></div>
+      <div id="answers-container"></div>
+      <div id="timer">Time left: <span id="time-left">15</span>s</div>
+      <button id="next-btn">Next</button>
+      <button id="end-quiz-btn" class="hidden">End Quiz</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="hidden">
+      <h2 id="final-score"></h2>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button id="save-score">Save Score</button>
+      <button id="restart-btn" onclick="location.reload()">Restart Quiz</button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
