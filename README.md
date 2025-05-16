@@ -32,7 +32,9 @@ Animal Quiz is an interactive, responsive web application that tests your knowle
 This project uses the browser's `localStorage` to save scores. Each user sees only their own scores, which are stored locally in their browser and are not shared across devices or users.
 
 ## Deployment
+The project is live and accessible at:
 
+**[https://animal-quiz-web-app.vercel.app/](https://animal-quiz-web-app.vercel.app/)**
 
 ## Credits
 
